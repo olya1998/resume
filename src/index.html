@@ -61,12 +61,12 @@
             </div>
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__link"><a href="#">Про мене</a></li>
-                    <li class="menu__link"><a href="#">Мій досвід</a></li>
-                    <li class="menu__link"><a href="#">Мої навички</a></li>
-                    <li class="menu__link"><a href="#">Мої роботи</a></li>
-                    <li class="menu__link"><a href="#">Прайс-лист</a></li>
-                    <li class="menu__link"><a href="#">Контакти</a></li>
+                    <li  class="menu__link"><a href="#about">Про мене</a></li>
+                    <li class="menu__link"><a href="#resume">Мій досвід</a></li>
+                    <li class="menu__link"><a href="#skills">Мої навички</a></li>
+                    <li class="menu__link"><a href="#portfolio">Мої роботи</a></li>
+                    <li class="menu__link"><a href="#prise">Прайс-лист</a></li>
+                    <li class="menu__link"><a href="#contacts">Контакти</a></li>
                 </ul>
             </nav>
 
@@ -90,20 +90,31 @@
             <h1 class="title title_fz48 promo__title">Я web-розробник 
                 з міста Харків</h1>
             <div class="promo__btns">
-                <a href="#" class="promo__link btn">Портфоліо</a>
-                <a href="#" class="promo__link">Про мене</a>
+                <a href="#portfolio" class="promo__link btn">Портфоліо</a>
+                <a href="#about" class="promo__link">Про мене</a>
             </div>    
         </div>
     </section>
 
-    <section class="about">
+    <section class="about">  
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
-                    <img src="img/2022-07-20 12.29.48.jpg" alt="photo">
+                    <!-- <img srcset="img/min.jpg 300w,
+                                 img/2022-07-20 12.29.48.jpg 400w"
+                         sizes="(max-width: 576px) 280px,
+                                 (min-width: 577px) 400px"
+                    src="img/2022-07-20 12.29.48.jpg" alt="photo"> -->
+
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/min.jpg">
+                        <source media="(min-width: 577px)" srcset="img/2022-07-20 12.29.48.jpg">
+                        <img src="img/2022-07-20 12.29.48.jpg" alt="photo">
+                    </picture>
+
                 </div>
                 <div class="about__descr">
-                    <h2 class="title title_fz16_1 about__title">Про мене</h2>
+                    <h2 id="about" class="title title_fz16_1 about__title">Про мене</h2>
                     <div class="title title_fz36 about__subtitle">Мене звуть Ольга</div>
                     <div class="divider"></div>
                     <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
@@ -155,7 +166,7 @@
 
     <section class="resume">
         <div class="container">
-            <h2 class="title title_fz16 title__section-title">Досвід</h2>
+            <h2 id="resume" class="title title_fz16 title__section-title">Досвід</h2>
             <div class="title title_fz36 title__section-subtitle">Чим я буду корисна</div>
             <div class="divider"></div>
 
@@ -228,11 +239,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
-    <section class="skills">
+    <section class="skills"> 
         <div class="container">
-            <h2 class="title title_fz16 title__section-title">Навички</h2>
+            <h2 id="skills" class="title title_fz16 title__section-title">Навички</h2>
             <div class="title title_fz36 title__section-subtitle">Що я використовую в роботі</div>
             <div class="divider"></div>
 
@@ -333,11 +344,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
     <section class="portfolio">
         <div class="container">
-            <h2 class="title title_fz16 title__section-title">Портфоліо</h2>
+            <h2 id="portfolio" class="title title_fz16 title__section-title">Портфоліо</h2>
             <div class="title title_fz36 title__section-subtitle">Мої роботи</div>
             <div class="divider"></div>
 
@@ -362,11 +373,11 @@
                 </a>
             </div>
         </div>
-    </section>
+    </section> 
 
-    <section class="prise">
+    <section class="prise"> 
         <div class="container">
-            <h2 class="title title_fz16 title__section-title">Портфоліо</h2>
+            <h2 id="prise" class="title title_fz16 title__section-title">Прайс-лист</h2>
             <div class="divider"></div>
 
             <div class="price__wrapper">
@@ -414,16 +425,16 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
-    <section class="contacts">
+    <section class="contacts"> 
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
                     <img src="img/2022-07-20 12.29.48.jpg" alt="photo">
                 </div>
                 <div class="contacts__descr">
-                    <h2 class="title title_fz16_1 contacts__title">Контакти</h2>
+                    <h2 id="contacts" class="title title_fz16_1 contacts__title">Контакти</h2>
                     <div class="title title_fz36 contacts__subtitle">Зв'яжіться зі мною</div>
                     <div class="divider"></div>
 
@@ -437,7 +448,7 @@
                         <a href="#" class="contacts__link">
                             <img src="icons/social/icons8-telegram-messenger-privately-held-company-with-cloud-based-instant-messaging-24.png" alt="telegram">
                         </a>
-                        <a href="#" class="contacts__link">
+                        <a href="https://www.instagram.com/olya.fitnesstrainer/" class="contacts__link">
                             <img src="icons/social/instagram2.png" alt="instagram">
                         </a>
                     </div>
@@ -447,11 +458,11 @@
 
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input name="name" id="name" type="text">
+                            <input required name="name" id="name" type="text">
                             <label for="name">Ваше ім'я</label>
                         </div>
                         <div class="contacts__input">
-                            <input name="email" id="email" type="email">
+                            <input required name="email" id="email" type="email">
                             <label for="email">Ваша пошта</label>
                         </div>
 
@@ -459,14 +470,18 @@
                             <textarea name="text" id="textarea"></textarea>
                             <label for="text">Ваше повідомлення</label>
                         </div>
-                        <div>
+                        <div class="contacts__triggers">
                             <button class="contacts__btn btn">Надіслати повідомлення</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>Я згоден(на) з <a href="/policy.html">політикою конфіденційності</a></span>
+                            </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-    </section>
+    </section>  
 
     <script src="js/script.js"></script>
 </body>
